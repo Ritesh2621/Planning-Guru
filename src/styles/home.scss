@@ -1,0 +1,191 @@
+@import "colors";
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  
+
+  > main {
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+
+    > h1 {
+      font: 400 4rem $text1;
+      color: $first;   
+    }
+
+    > p {
+      font: 900 1rem $text1;
+      color: white;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center/auto url("../assests/1.jpg");
+ 
+ 
+  }
+}
+
+.home2 {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  padding: 500px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -200px;
+
+  > img {
+    width: 30%;
+    animation: imgUp 0.3s linear infinite alternate;
+  }
+
+  > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    height: 100vh;
+
+    > p {
+      color: $first;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      font: 100 1.2rem $text2;
+    }
+  }
+}
+
+@keyframes imgUp {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.home3 {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  color: $first;
+  margin-top: -50px;
+  display: flex;
+  font: 400 4rem $text1;
+
+  > div {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    > h1 {
+      text-transform: uppercase;
+      border-bottom: 2px solid black;
+      padding: 0.5rem;
+      width: 15rem;
+      color: $first;
+    }
+    
+    > p {
+      padding: 5rem;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      line-height: 170%;
+      font: italic 100 1.2rem $text2;
+    }
+    
+    
+   
+  }
+  >div{
+    >img{
+      height: 300px;
+      width: 400px;
+      animation: imgUp 0.7s linear infinite alternate;
+    }
+  }
+}
+
+.home4 {
+  width: 100%;
+  height: 100vh;
+    background-color: $second;
+    color: $first;
+    text :$text1;
+    // margin-top: -150px;
+    display: flex;
+   
+  >div{
+   .img1{
+    position: relative;
+    left:150px;
+   }
+    .img1:hover{
+      transform: scale(1.2);
+      transition: transform 0.5s ease-in-out;
+    }
+   .img2{
+    position: relative;
+    bottom: 210px;
+    left:550px;
+   }
+   .img2:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+  }
+   .img3{
+    position: relative;
+    bottom: 410px;
+    left:1000px;
+   }
+   .img3:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+  }
+   .img4{
+    position: relative;
+    bottom: 350px;
+    left:300px;
+   }
+   .img4:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+  }
+   .img5{
+    position: relative;
+    bottom: 560px;
+    left:850px;
+   }
+   .img5:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+  }
+  }
+ 
+}
+
+
+.gallery{
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+

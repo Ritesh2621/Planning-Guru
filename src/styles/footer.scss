@@ -1,0 +1,11 @@
+@import "colors";
+
+footer{
+    background-color: $first;
+    height: 100px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
